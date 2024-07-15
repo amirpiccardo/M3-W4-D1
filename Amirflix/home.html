@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Piccardoflix</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!--Ho linkato il css, la libreria per le icone awesome e bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <!--ho messo nella nav il mio logo netflix, una serch icon e altre due icone con tra loro un h! per mantenere la testa altezza delle icone-->
+  <body class="bg-black">
+    <div id="navbar">
+      <img src="LOGO P.png" alt="logo"/>
+      <ul id="navlinks">
+        <li>Home</li>
+        <li>TV Shows</li>
+        <li>Movies</li>
+        <li>Recently Added</li>
+        <li>My List</li>
+      </ul>
+      <img id="search-icon" src="search-icon.png" alt="cerca"/>
+      <h! class="adult-text">ADULT</h3>
+      <i class="fas fa-bell"></i>
+  <i class="fas fa-user"></i>
+    </div>
+    <!-- qui mi sono un sbizzarrito inserendo il trailer di Deadpool 3(sono un grande fan Marvel) inserendo un autoplay muted affinché il video rimanesse muto di base-->
+    <div id="preview-conteiner">
+      <video autoplay muted>
+        <source src="Deadpool .mp4"/>
+      </video>
+      <!-- qui ho fatto dei contenitori con dentro dei bottoni dei quali uno solo é funzionante, quello che permette di ascoltare il video-->
+      <div id="preview-overlay">
+        <div id="preview-details">
+          <h3 id="preview-title">Deadpool (Tap Here)</h3>
+          <button><i class="fas fa-play"></i></button>
+          <button><i class="fas fa-volume-mute"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+        <div class="d-flex align-items-center">
+                <h2 class="tv-shows">TV Shows</h2>
+                <!-- ho messo un dropdown per avere la freccetta rivlta verso il basso in stile tendina-->
+                <div class="dropdown">
+                    <button class="bg-black text-white dropdown-toggle">
+                        Genres
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- il conteiner fluid ci salva la vita alla grande, ho sfruttato la griglia bootstrap(grid sistem :-) ) -->
+<div id="categories" class="container-fluid">
+  <div class="row category">
+    <h3 class="col-12">Trending Now</h3>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/1.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/2.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/3.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/4.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/5.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/6.png" class="img-fluid"/>
+    </div>
+  </div>
+  <div class="row category">
+    <h3 class="col-12">Watch It Again</h3>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/7.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/8.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/9.png" class="img-fluid" />
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/10.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/11.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/12.png" class="img-fluid"/>
+    </div>
+  </div>
+  <div class="row category">
+    <h3 class="col-12">New Releases</h3>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/13.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/14.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/15.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/16.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/17.png" class="img-fluid"/>
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/imgs/movies/18.png" class="img-fluid"/>
+    </div>
+  </div>
+</div>
+
+        <!-- qui ho dato delle a href a quasi tutti gli elementi del footer cosi da dare una sensazione di possibile collegamento-->
+    
+    <footer class="footer mt-5">
+        <div class="container">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Audio and Subtitles</a></li>
+                        <li><a href="#">Media Center</a></li>
+                        <li><a href="#">Privacy public</a></li>
+                        <li><a href="#">Don't Contact Us</a></li>
+                        <li><a href="#"><button class="servicecode">Service Code</button></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Audio Description</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">American Legal shot</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Steve Jobs</a></li>
+                        <li><a href="#">hot Cookies Preferences</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 1997-2024 Netflix, Inc. (a-1234567890)</p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
